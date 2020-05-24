@@ -16,13 +16,24 @@ function expect(actual) {
   };
 }
 
-let expected;
-let result;
+function test(title, callback) {
+  try {
+    callback();
+    console.log(`OK ${title}`);
+  } catch (err) {
+    console.error(`X ${title}`);
+    console.error(err.message);
+  }
+}
 
-expected = 16;
-result = multiply(4, 4);
-expect(result).toBe(expected);
+test("multiply multiplies numbers", () => {
+  const expected = 15;
+  const result = multiply(4, 4);
+  expect(result).toBe(expected);
+});
 
-expected = 2;
-result = divide(4, 2);
-expect(result).toBe(expected);
+test("divide divides numbers", () => {
+  const expected = 2;
+  const result = divide(4, 2);
+  expect(result).toBe(expected);
+});
