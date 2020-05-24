@@ -21,8 +21,8 @@ let result;
 
 expected = 16;
 result = multiply(4, 4);
-expect(result).toEqual(expected);
+expect(result).toBe(expected);
 
 expected = 2;
 result = divide(4, 2);
-expect(result).toEqual(expected);
+expect(result).toBe(expected);
