@@ -6,8 +6,11 @@ function divide(a, b) {
   return a / b;
 }
 
-let expected = 16;
-let result = multiply(4, 4);
+let expected;
+let result;
+
+expected = 16;
+result = multiply(4, 4);
 if (expected !== result) {
   throw new Error(`${expected} is not equal to ${result}`);
 }
