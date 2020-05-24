@@ -5,6 +5,10 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node --require ./src/test-utils.js ./src/math.test.js"
+    "start": "node --require ./src/test-utils.js ./src/math.test.js",
+    "test": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
   }
 }

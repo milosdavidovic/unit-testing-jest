@@ -3,7 +3,7 @@ const { divide, multiply } = require("./math");
 test("multiply multiplies numbers", () => {
   // A-A-A
   // arrange
-  const expected = 15;
+  const expected = 16;
   // act
   const result = multiply(4, 4);
   // assert
