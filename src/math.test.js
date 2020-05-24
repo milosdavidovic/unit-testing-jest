@@ -1,34 +1,12 @@
 const { divide, multiply } = require("./math");
 
-function expect(actual) {
-  return {
-    toBe(expected) {
-      if (actual !== expected) {
-        throw new Error(`${expected} is not equal to ${actual}`);
-      }
-    },
-    toEqual(value) {
-      throw new Error("Not implemented exception");
-    },
-    toBeGreaterThen(value) {
-      throw new Error("Not implemented exception");
-    },
-  };
-}
-
-function test(title, callback) {
-  try {
-    callback();
-    console.log(`OK ${title}`);
-  } catch (err) {
-    console.error(`X ${title}`);
-    console.error(err.message);
-  }
-}
-
 test("multiply multiplies numbers", () => {
+  // A-A-A
+  // arrange
   const expected = 15;
+  // act
   const result = multiply(4, 4);
+  // assert
   expect(result).toBe(expected);
 });
 
