@@ -2,7 +2,7 @@
   "name": "unit-testing-jest",
   "version": "1.0.0",
   "author": "Milos Davidovic",
-  "main": "src/index.js",
+  "main": "src/math.js",
   "license": "MIT",
   "scripts": {
     "start": "node ./src/math.test.js"
