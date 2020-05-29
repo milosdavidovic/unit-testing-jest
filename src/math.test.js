@@ -1,7 +1,8 @@
 const { divide, multiply } = require("./math");
+const { test, expect } = require("./test-utils");
 
+// A-A-A
 test("multiply multiplies numbers", () => {
-  // A-A-A
   // arrange
   const expected = 16;
   // act

@@ -24,5 +24,7 @@ function test(title, callback) {
   }
 }
 
-global.expect = expect;
-global.test = test;
+module.exports = {
+  expect,
+  test,
+};

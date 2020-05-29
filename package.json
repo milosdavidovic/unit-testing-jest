@@ -4,7 +4,7 @@
   "author": "Milos Davidovic",
   "license": "MIT",
   "scripts": {
-    "start": "node --require ./src/test-utils.js ./src/math.test.js",
+    "start": "node ./src/math.test.js",
     "test": "jest --watch"
   },
   "devDependencies": {
